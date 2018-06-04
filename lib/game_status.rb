@@ -54,3 +54,8 @@ def over?(board)
     return false
   end
 end
+
+def winner
+  winning_token = won?(board)
+  puts winning_token
+end
