@@ -14,3 +14,9 @@ WIN_COMBINATIONS = [
   [1, 4, 7],
   [2, 5, 8]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |position_1, position_2, position_3|
+      puts position_1, position_2, position_3
+  end
+end
