@@ -17,6 +17,14 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |position_1, position_2, position_3|
-      puts position_1, position_2, position_3
+      if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X" 
+        return [position_1, position_2, position_3]
+        break
+      end
+      if board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O" 
+          return [position_1, position_2, position_3]
+          break
+      end
   end
+  return false
 end
