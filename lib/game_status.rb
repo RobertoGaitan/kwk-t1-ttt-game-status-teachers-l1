@@ -57,6 +57,6 @@ end
 
 def winner(board)
   winning_token = won?(board)
-  puts winning_token
-  puts board[winning_token]
+  winner = board[winning_token[0]]
+  return winner
 end
