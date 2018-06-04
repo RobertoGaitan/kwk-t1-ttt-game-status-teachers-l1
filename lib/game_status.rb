@@ -32,10 +32,10 @@ end
 def full?(board)
   board.each do |token|
     if token == " " || token == ""
-       return true
+       return false
        break
      else
-       return false
+       return true
      end
  end
 end
