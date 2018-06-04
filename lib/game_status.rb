@@ -28,3 +28,14 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.each do |token|
+    if token == " " || token == ""
+       return true
+       break
+     else
+       return false
+     end
+ end
+end
