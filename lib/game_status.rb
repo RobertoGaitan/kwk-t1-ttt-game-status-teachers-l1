@@ -34,8 +34,7 @@ def full?(board)
     if token == " " || token == ""
        return false
        break
-     else
-       return true
      end
  end
+return true
 end
